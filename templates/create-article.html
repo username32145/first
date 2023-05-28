@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}
+add page
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Ваше звернення</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введіть тему"><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введіть основний текст"></textarea><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введіть свою пошту"></textarea><br>
+        <label for="firstName"></label>
+            <input type="text" class="form-control" id="firstName" placeholder="Ім'я" value="" name="firstName" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+        <label for="lastName"></label>
+            <input type="text" class="form-control" id="lastName" placeholder="Прізвище" value="" name="lastName" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+        <label for="country"></label>
+            <select class="custom-select d-block w-100" id="country" required="">
+              <option value="">Бюджет...</option>
+              <option>1000$</option>
+              <option>10.000$</option>
+              <option>100.000$</option>
+              <option>1.000.000$</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid.
+            </div>
+        <hr class="featurette-divider">
+        <input type="submit" class="btn btn-success" value="Надіслати">
+    </form>
+</div>
+{% endblock %}

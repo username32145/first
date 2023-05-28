@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+Відгуки
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Add feedback</h1>
+    <form method="post">
+        <input type="text" name="feedback_name" id="feedback_name" class="form-control" placeholder="Введіть ім'я"><br>
+        <textarea name="short_feedback" id="short_feedback" class="form-control" placeholder="Введіть причину"></textarea><br>
+        <textarea name="feed_back" id="feed_back" class="form-control" placeholder="Введіть відгук"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Надіслати">
+    </form>
+</div>
+{% endblock %}
