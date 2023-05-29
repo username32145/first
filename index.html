@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}
+Головна сторінка
+{% endblock %}
+
+
+
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фінанси - Головна сторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<center>
+<img src="https://odrzn.sumy.ua/wp-content/uploads/scale_1200.webp" alt="" style="width: 900px; height: 500px;">
+</center>
+<hr class="featurette-divider">
+<center>
+    <main>
+        <section class="hero">
+            <h1>Ласкаво просимо до нашого сайту про фінанси</h1>
+            <p>Тут ви знайдете корисну інформацію про управління фінансами, інвестиції та багато іншого.</p>
+            <a class="text-muted" href="/cont">Детальніше</a>
+        </section>
+        <hr class="featurette-divider">
+
+        <section class="features">
+            <div class="feature">
+                <h2>Управління фінансами</h2>
+                <p>Дізнайтеся про стратегії управління фінансами, бюджетування та планування для досягнення фінансової стабільності.</p>
+                <a class="text-muted" href="/cont">Детальніше</a>
+
+            </div>
+            <hr class="featurette-divider">
+            <div class="feature">
+                <h2>Інвестиції</h2>
+                <p>Вивчайте різні види інвестицій та отримуйте поради щодо раціонального розподілу інвестиційного портфеля.</p>
+                <a class="text-muted" href="/about">Детальніше</a>
+            </div>
+            <hr class="featurette-divider">
+            <div class="feature">
+                <h2>Податки та страхування</h2>
+                <p>Ознайомтесь з правилами оподаткування та виберіть відповідні страхові продукти для захисту ваших фінансів.</p>
+                <a class="text-muted" href="/cont">Детальніше</a>
+            </div>
+        </section>
+    </main>
+</center>
+</body>
+
+</html>
+{% endblock %}
